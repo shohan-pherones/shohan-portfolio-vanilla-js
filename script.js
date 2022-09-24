@@ -75,3 +75,49 @@ linksContainer.addEventListener(
   "click",
   () => linksContainer.classList.contains("links-open") && disapearMobileNav()
 );
+
+/////////////////////////////////////////////////////////////
+// Tag cloud
+/////////////////////////////////////////////////////////////
+
+const myTags = [
+  "HTML",
+  "CSS",
+  "Bootstrap",
+  "Tailwind CSS",
+  "Git",
+  "GitHub",
+  "Netlify",
+  "JavaScript",
+  "React.js",
+  "Next.js",
+  "React Native",
+  "Redux",
+  "Material UI",
+  "React Bootstrap",
+  "Sanity.io",
+  "Node.js",
+  "NPM",
+  "Express.js",
+  "MySQL",
+  "MongoDB",
+  "Mongoose",
+  "Python",
+  "C",
+  "C++",
+  "C#",
+  "jQuery",
+  "Vue.js",
+  "SaSS",
+  "AJAX",
+  "Axios",
+  "Fetch API",
+];
+
+const tagCloud = TagCloud(".content", myTags, {
+  radius: 375,
+  maxSpeed: "fast",
+  initSpeed: "normal",
+  direction: 135,
+  keep: true,
+});
