@@ -316,6 +316,65 @@ body {
   color: var(--color-secondary);
 }
 
+/* Projects */
+.projects {
+  margin-top: 7.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+.project {
+  overflow: hidden;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+}
+
+.project-img {
+  overflow: hidden;
+  border: 1px dashed rgba(68, 68, 68, 0.3);
+}
+
+.project-img img {
+  width: 100%;
+  transform: scale(1.2);
+}
+
+.project-texts {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.project-tools {
+  color: var(--color-primary);
+  display: flex;
+  gap: 2rem;
+}
+
+.project-texts span {
+  background-color: rgba(64, 224, 208, 0.1);
+  padding: 0.3rem 1.2rem;
+  border-radius: 3px;
+}
+
+.project-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-btns a {
+  font-size: 2rem;
+  color: var(--color-secondary);
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.project-btns a:hover {
+  color: var(--color-dark);
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -415,6 +474,10 @@ footer p:hover span {
   .section-title {
     margin: 15rem 20vw 0;
   }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -448,5 +511,10 @@ footer p:hover span {
 
   .btn {
     font-size: 1.5rem;
+  }
+
+  .project-btns {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
