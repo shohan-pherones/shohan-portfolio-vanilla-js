@@ -142,3 +142,5 @@ typeWriter
   .typeString("can also design creative & unique websites.")
   .pauseFor(3000)
   .start();
+
+new WOW().init();
