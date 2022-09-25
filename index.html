@@ -269,9 +269,13 @@
 
       <script>
         const loader = document.querySelector(".preloader");
+        document.querySelector("html").style.overflowY = "hidden";
 
         window.addEventListener("load", function () {
-          loader.style.display = "none";
+          setTimeout(() => {
+            loader.style.display = "none";
+            document.querySelector("html").style.overflowY = "visible";
+          }, 2000);
         });
       </script>
     </main>
