@@ -10,6 +10,7 @@ const linksContainer = document.querySelector(".links");
 const links = document.querySelectorAll(".link");
 const toggleBtn = document.querySelector(".toggle");
 const app = document.getElementById("app");
+const loader = document.querySelector(".preloader");
 
 /////////////////////////////////////////////////////////////
 // Navbar sticky
@@ -132,7 +133,7 @@ const typeWriter = new Typewriter(app, {
 });
 
 typeWriter
-  .pauseFor(2000)
+  .pauseFor(5000)
   .typeString("I am a web developer.")
   .pauseFor(3000)
   .deleteChars(19)
@@ -144,3 +145,16 @@ typeWriter
   .start();
 
 new WOW().init();
+
+/////////////////////////////////////////////////////////////
+// Pre loader
+/////////////////////////////////////////////////////////////
+
+document.querySelector("html").style.overflowY = "hidden";
+
+window.addEventListener("load", function () {
+  setTimeout(() => {
+    loader.style.display = "none";
+    document.querySelector("html").style.overflowY = "visible";
+  }, 2000);
+});

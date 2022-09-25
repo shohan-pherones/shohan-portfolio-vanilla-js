@@ -58,7 +58,7 @@ body {
   height: 10rem;
   padding: 0 10vw;
   z-index: 100;
-  animation: navReveal 2s 1;
+  animation: navReveal 5s 1;
 }
 
 @keyframes navReveal {
@@ -200,7 +200,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
-  animation: heroTextReveal 2s 1;
+  animation: heroTextReveal 5s 1;
 }
 
 @keyframes heroTextReveal {
@@ -251,7 +251,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  animation: heroImgReveal 2s 1;
+  animation: heroImgReveal 5s 1;
 }
 
 @keyframes heroImgReveal {
@@ -558,6 +558,73 @@ footer p span {
 
 footer p:hover span {
   color: var(--color-secondary);
+}
+
+/* Pre loader */
+
+.preloader {
+  background-color: var(--color-light);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 103;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  position: relative;
+  transform: scale(2);
+  border-radius: 50%;
+  border: 1px solid;
+  width: 30px;
+  height: 30px;
+  color: var(--color-dark);
+}
+
+.loader::after {
+  position: absolute;
+  width: 0px;
+  height: 10px;
+  display: block;
+  border-left: 1px solid var(--color-dark);
+  content: "";
+  left: 14px;
+  border-radius: 1px;
+  top: 4px;
+  animation-duration: 1s;
+}
+
+.loader::before {
+  position: absolute;
+  width: 0px;
+  height: 10px;
+  display: block;
+  border-left: 1px solid var(--color-dark);
+  content: "";
+  left: 14px;
+  border-radius: 1px;
+  top: 4px;
+  animation-duration: 40s;
+}
+
+.loader::before,
+.loader::after {
+  transform-origin: bottom;
+  animation-name: dial;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes dial {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Media queries */
