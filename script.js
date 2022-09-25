@@ -10,6 +10,7 @@ const linksContainer = document.querySelector(".links");
 const links = document.querySelectorAll(".link");
 const toggleBtn = document.querySelector(".toggle");
 const app = document.getElementById("app");
+const allSections = document.querySelectorAll(".section");
 
 /////////////////////////////////////////////////////////////
 // Navbar sticky
@@ -143,4 +144,23 @@ typeWriter
   .pauseFor(3000)
   .start();
 
-new WOW().init();
+///////////////////////////////////////////////////////////
+// Reveal sections
+///////////////////////////////////////////////////////////
+
+function revealSection(entries, observer) {
+  const entry = entries[0];
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("section-hidden");
+  observer.unobserve(entry.target);
+}
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.2,
+});
+
+allSections.forEach((section) => {
+  sectionObserver.observe(section);
+  section.classList.add("section-hidden");
+});
