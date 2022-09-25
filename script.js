@@ -16,70 +16,70 @@ const allSections = document.querySelectorAll(".section");
 // Navbar sticky
 /////////////////////////////////////////////////////////////
 
-// const navHeight = nav.getBoundingClientRect().height;
+const navHeight = nav.getBoundingClientRect().height;
 
-// function sticky(entries) {
-//   const entry = entries[0];
-//   if (!entry.isIntersecting) header.classList.add("sticky");
-//   else header.classList.remove("sticky");
-// }
+function sticky(entries) {
+  const entry = entries[0];
+  if (!entry.isIntersecting) header.classList.add("sticky");
+  else header.classList.remove("sticky");
+}
 
-// const navObserver = new IntersectionObserver(sticky, {
-//   root: null,
-//   threshold: 0,
-//   rootMargin: `-${navHeight}px`,
-// });
+const navObserver = new IntersectionObserver(sticky, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+});
 
-// navObserver.observe(header);
+navObserver.observe(header);
 
 /////////////////////////////////////////////////////////////
 // Link active
 /////////////////////////////////////////////////////////////
 
-// links.forEach((link) =>
-//   link.addEventListener("click", (e) => {
-//     const link = e.target;
-//     const siblings = link.closest(".links").querySelectorAll(".link");
+links.forEach((link) =>
+  link.addEventListener("click", (e) => {
+    const link = e.target;
+    const siblings = link.closest(".links").querySelectorAll(".link");
 
-//     siblings.forEach((sibling) => {
-//       sibling === link
-//         ? (sibling.style.color = "turquoise")
-//         : (sibling.style.color = "#444");
-//     });
-//   })
-// );
+    siblings.forEach((sibling) => {
+      sibling === link
+        ? (sibling.style.color = "turquoise")
+        : (sibling.style.color = "#444");
+    });
+  })
+);
 
 /////////////////////////////////////////////////////////////
 // Link toggle
 /////////////////////////////////////////////////////////////
 
-// function apearMobileNav() {
-//   toggleBtn.classList.add("toggle-close");
-//   linksContainer.classList.add("links-open");
-//   linksContainer.style.animation = "mobileNavAppear 0.3s 1";
-//   document.querySelector("html").style.overflowY = "hidden";
-// }
+function apearMobileNav() {
+  toggleBtn.classList.add("toggle-close");
+  linksContainer.classList.add("links-open");
+  linksContainer.style.animation = "mobileNavAppear 0.3s 1";
+  document.querySelector("html").style.overflowY = "hidden";
+}
 
-// function disapearMobileNav() {
-//   toggleBtn.classList.remove("toggle-close");
-//   linksContainer.style.animation = "mobileNavDisappear 0.35s 1";
-//   setTimeout(() => linksContainer.classList.remove("links-open"), 300);
-//   document.querySelector("html").style.overflowY = "visible";
-// }
+function disapearMobileNav() {
+  toggleBtn.classList.remove("toggle-close");
+  linksContainer.style.animation = "mobileNavDisappear 0.35s 1";
+  setTimeout(() => linksContainer.classList.remove("links-open"), 300);
+  document.querySelector("html").style.overflowY = "visible";
+}
 
-// toggleBtn.addEventListener("click", () => {
-//   console.log("hello 3");
-//   toggleBtn.classList.contains("toggle-close")
-//     ? disapearMobileNav()
-//     : apearMobileNav();
-// });
+toggleBtn.addEventListener("click", () => {
+  console.log("hello 3");
+  toggleBtn.classList.contains("toggle-close")
+    ? disapearMobileNav()
+    : apearMobileNav();
+});
 
-// linksContainer.addEventListener("click", () => {
-//   if (linksContainer.classList.contains("links-open")) {
-//     disapearMobileNav();
-//   }
-//   return;
-// });
+linksContainer.addEventListener("click", () => {
+  if (linksContainer.classList.contains("links-open")) {
+    disapearMobileNav();
+  }
+  return;
+});
 
 /////////////////////////////////////////////////////////////
 // Tag cloud
