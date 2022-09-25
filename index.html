@@ -30,11 +30,12 @@
     <script defer src="./script.js"></script>
   </head>
   <body>
-    <!-- Preloader -->
+    <!-- Pre-loader -->
     <div class="preloader">
       <div class="loader"></div>
     </div>
 
+    <!-- Header -->
     <header>
       <!-- Navbar -->
       <nav class="navbar">
@@ -44,7 +45,7 @@
           /></a>
         </div>
         <ul class="links">
-          <li class="link-item"><a class="link" href="#hero">Home</a></li>
+          <li class="link-item"><a class="link" href="#home">Home</a></li>
           <li class="link-item"><a class="link" href="#about">About</a></li>
           <li class="link-item"><a class="link" href="#skills">Skills</a></li>
           <li class="link-item">
@@ -60,7 +61,7 @@
       </nav>
 
       <!-- Hero section -->
-      <div class="hero container" id="hero">
+      <div class="hero container" id="home">
         <div class="hero-left">
           <p class="hello">Hello there, my name is</p>
           <h1 class="main-headline">
@@ -72,13 +73,15 @@
             exceptional and unique websites. Currently, I'm focused on building
             accessible, human-centered interactive web apps.
           </p>
-          <button class="cta">
-            <span>Learn more</span>
-            <svg viewBox="0 0 13 10" height="10px" width="15px">
-              <path d="M1,5 L11,5"></path>
-              <polyline points="8 1 12 5 8 9"></polyline>
-            </svg>
-          </button>
+          <a href="#about">
+            <button class="cta">
+              <span>Learn more</span>
+              <svg viewBox="0 0 13 10" height="10px" width="15px">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </button>
+          </a>
         </div>
         <div class="hero-right">
           <img
@@ -89,6 +92,7 @@
       </div>
     </header>
 
+    <!-- Main -->
     <main>
       <!-- About -->
       <section id="about" class="section">
@@ -115,13 +119,15 @@
               quod recusandae excepturi! Quasi reprehenderit quibusdam fugiat
               sit?
             </p>
-            <button class="cta">
-              <span>Download resume</span>
-              <svg viewBox="0 0 13 10" height="10px" width="15px">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-              </svg>
-            </button>
+            <a href="#contact">
+              <button class="cta">
+                <span>Contact me</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+            </a>
           </div>
         </div>
       </section>
@@ -166,6 +172,7 @@
               >
             </div>
           </div>
+
           <div class="project">
             <div class="project-img">
               <img src="./images/tera-guard.png" alt="Tera Guard homepage" />
@@ -226,13 +233,15 @@
                 required
               ></textarea>
             </div>
-            <button class="cta">
-              <span>Submit</span>
-              <svg viewBox="0 0 13 10" height="10px" width="15px">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-              </svg>
-            </button>
+            <a href="./index.html">
+              <button class="cta">
+                <span>Submit</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+            </a>
           </div>
           <div class="contact-right">
             <img
@@ -243,19 +252,20 @@
         </div>
       </section>
 
-      <footer class="section">
+      <!-- Footer -->
+      <footer>
         <p>Designed & Built by <span>Md. Shohanur Rahman</span></p>
       </footer>
 
-      <!-- Preloader script -->
+      <!-- Pre-loader script -->
       <script>
         const loader = document.querySelector(".preloader");
-        document.querySelector("html").style.overflowY = "hidden";
+        document.querySelector("html").style.overflow = "hidden";
 
         window.addEventListener("load", function () {
           setTimeout(() => {
             loader.style.display = "none";
-            document.querySelector("html").style.overflowY = "visible";
+            document.querySelector("html").style.overflow = "visible";
           }, 2000);
         });
       </script>

@@ -41,7 +41,7 @@ body {
   font-size: 1.7rem;
   font-weight: 400;
   line-height: 1.7;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -57,7 +57,6 @@ body {
   width: 100%;
   height: 10rem;
   padding: 0 10vw;
-  z-index: 100;
   animation: navReveal 5s 1;
 }
 
@@ -73,7 +72,7 @@ body {
   }
 }
 
-.navbar.sticky {
+.sticky .navbar {
   background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -82,6 +81,11 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
+}
+
+.sticky .hero {
+  margin-top: 10rem;
 }
 
 .logo img {
@@ -189,6 +193,7 @@ body {
 }
 
 .section {
+  padding: 15rem 0;
   transition: transform 2s, opacity 2s;
 }
 
@@ -201,7 +206,7 @@ body {
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 10rem;
+  padding-top: 10rem;
 }
 
 .hero-left {
@@ -528,7 +533,7 @@ footer p::before {
   left: 0;
   bottom: -5px;
   background-color: var(--color-secondary);
-  transform: translateX(-100%);
+  transform: translateX(-20rem);
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s;
@@ -542,7 +547,7 @@ footer p::after {
   right: 0;
   bottom: -5px;
   background-color: var(--color-secondary);
-  transform: translateX(100%);
+  transform: translateX(20rem);
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s;
@@ -669,10 +674,6 @@ footer p:hover span {
 
   .about-left {
     justify-content: center;
-  }
-
-  .section-title {
-    margin: 15rem 20vw 0;
   }
 
   .projects {
