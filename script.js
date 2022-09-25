@@ -10,7 +10,6 @@ const linksContainer = document.querySelector(".links");
 const links = document.querySelectorAll(".link");
 const toggleBtn = document.querySelector(".toggle");
 const app = document.getElementById("app");
-const loader = document.querySelector(".preloader");
 
 /////////////////////////////////////////////////////////////
 // Navbar sticky
@@ -145,11 +144,3 @@ typeWriter
   .start();
 
 new WOW().init();
-
-/////////////////////////////////////////////////////////////
-// Pre loader
-/////////////////////////////////////////////////////////////
-
-window.addEventListener("load", function () {
-  loader.style.display = "none";
-});
