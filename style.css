@@ -508,63 +508,14 @@ body {
 
 /* Footer */
 footer {
+  background-color: var(--color-secondary);
+  padding: 15rem 0;
+  margin-top: 15rem;
   text-align: center;
-  padding: 15rem;
 }
 
-footer p {
-  display: inline-block;
-  position: relative;
-}
-
-footer p::before {
-  content: "";
-  width: 0%;
-  height: 1px;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  background-color: var(--color-secondary);
-  transform: translateX(-20rem);
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s;
-}
-
-footer p::after {
-  content: "";
-  width: 0%;
-  height: 1px;
-  position: absolute;
-  right: 0;
-  bottom: -5px;
-  background-color: var(--color-secondary);
-  transform: translateX(20rem);
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s;
-}
-
-footer p:hover::before {
-  width: 50%;
-  transform: translateX(0);
-  visibility: visible;
-  opacity: 1;
-}
-
-footer p:hover::after {
-  width: 50%;
-  transform: translateX(0);
-  visibility: visible;
-  opacity: 1;
-}
-
-footer p span {
-  transition: all 0.3s;
-}
-
-footer p:hover span {
-  color: var(--color-secondary);
+footer span {
+  color: var(--color-light);
 }
 
 /* Pre-loader */
@@ -719,5 +670,12 @@ footer p:hover span {
   .input,
   .text-area {
     width: 35rem;
+  }
+}
+
+@media screen and (max-width: 366px) {
+  .input,
+  .text-area {
+    width: 30rem;
   }
 }

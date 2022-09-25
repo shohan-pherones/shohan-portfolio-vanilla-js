@@ -3,7 +3,6 @@
 /////////////////////////////////////////////////////////////
 // Elements
 /////////////////////////////////////////////////////////////
-
 const header = document.querySelector("header");
 const nav = document.querySelector(".navbar");
 const linksContainer = document.querySelector(".links");
@@ -15,7 +14,6 @@ const allSections = document.querySelectorAll(".section");
 /////////////////////////////////////////////////////////////
 // Navbar sticky
 /////////////////////////////////////////////////////////////
-
 const navHeight = nav.getBoundingClientRect().height;
 
 function sticky(entries) {
@@ -35,7 +33,6 @@ navObserver.observe(header);
 /////////////////////////////////////////////////////////////
 // Link active
 /////////////////////////////////////////////////////////////
-
 links.forEach((link) =>
   link.addEventListener("click", (e) => {
     const link = e.target;
@@ -52,19 +49,18 @@ links.forEach((link) =>
 /////////////////////////////////////////////////////////////
 // Link toggle
 /////////////////////////////////////////////////////////////
-
 function apearMobileNav() {
   toggleBtn.classList.add("toggle-close");
   linksContainer.classList.add("links-open");
   linksContainer.style.animation = "mobileNavAppear 0.3s 1";
-  document.querySelector("html").style.overflowY = "hidden";
+  document.querySelector("html").style.overflow = "hidden";
 }
 
 function disapearMobileNav() {
   toggleBtn.classList.remove("toggle-close");
   linksContainer.style.animation = "mobileNavDisappear 0.35s 1";
   setTimeout(() => linksContainer.classList.remove("links-open"), 300);
-  document.querySelector("html").style.overflowY = "visible";
+  document.querySelector("html").style.overflow = "visible";
 }
 
 toggleBtn.addEventListener("click", () => {
@@ -75,16 +71,12 @@ toggleBtn.addEventListener("click", () => {
 });
 
 linksContainer.addEventListener("click", () => {
-  if (linksContainer.classList.contains("links-open")) {
-    disapearMobileNav();
-  }
-  return;
+  if (linksContainer.classList.contains("links-open")) disapearMobileNav();
 });
 
 /////////////////////////////////////////////////////////////
 // Tag cloud
 /////////////////////////////////////////////////////////////
-
 const myTags = [
   "HTML",
   "CSS",
@@ -113,7 +105,7 @@ const myTags = [
   "C#",
   "jQuery",
   "Vue.js",
-  "SaSS",
+  "Sass",
   "AJAX",
   "Axios",
   "Fetch API",
@@ -127,10 +119,9 @@ const tagCloud = TagCloud(".content", myTags, {
   keep: true,
 });
 
-// /////////////////////////////////////////////////////////////
-// // Typewriter effect
-// /////////////////////////////////////////////////////////////
-
+/////////////////////////////////////////////////////////////
+// Typewriter effect
+/////////////////////////////////////////////////////////////
 const typeWriter = new Typewriter(app, {
   loop: true,
 });
@@ -147,10 +138,9 @@ typeWriter
   .pauseFor(3000)
   .start();
 
-// ///////////////////////////////////////////////////////////
-// // Reveal sections
-// ///////////////////////////////////////////////////////////
-
+/////////////////////////////////////////////////////////////
+// Reveal sections
+/////////////////////////////////////////////////////////////
 function revealSection(entries, observer) {
   const entry = entries[0];
   if (!entry.isIntersecting) return;
