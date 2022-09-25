@@ -133,7 +133,7 @@ const typeWriter = new Typewriter(app, {
 });
 
 typeWriter
-  .pauseFor(5000)
+  .pauseFor(2000)
   .typeString("I am a web developer.")
   .pauseFor(3000)
   .deleteChars(19)
@@ -150,11 +150,6 @@ new WOW().init();
 // Pre loader
 /////////////////////////////////////////////////////////////
 
-document.querySelector("html").style.overflowY = "hidden";
-
 window.addEventListener("load", function () {
-  setTimeout(() => {
-    loader.style.display = "none";
-    document.querySelector("html").style.overflowY = "visible";
-  }, 2000);
+  loader.style.display = "none";
 });
