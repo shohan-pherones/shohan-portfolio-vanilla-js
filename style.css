@@ -327,24 +327,22 @@ body {
 .project {
   overflow: hidden;
   background-color: white;
-  border-radius: 0 0 20px 20px;
+  border-radius: 15px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .project-img {
   overflow: hidden;
-  border: 1px dashed rgba(68, 68, 68, 0.3);
+  border-radius: 10px;
 }
 
 .project-img img {
   width: 100%;
+  border-radius: 10px;
   transform: scale(1.2);
-}
-
-.project-texts {
-  padding: 5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
 }
 
 .project-tools {
@@ -353,10 +351,9 @@ body {
   gap: 2rem;
 }
 
-.project-texts span {
+.project-tools span {
   background-color: rgba(64, 224, 208, 0.1);
-  padding: 0.3rem 1.2rem;
-  border-radius: 3px;
+  padding: 0.2rem 1.5rem;
 }
 
 .project-btns {
@@ -373,6 +370,128 @@ body {
 
 .project-btns a:hover {
   color: var(--color-dark);
+}
+
+/* Contact */
+.contact {
+  margin-top: 7.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.input {
+  width: 50rem;
+  height: 4rem;
+  background-color: #05060f0a;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 1.5rem;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.text-area {
+  width: 50rem;
+  background-color: #05060f0a;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 2px solid transparent;
+  font-size: 1.5rem;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-dark);
+  transition: all 0.3s;
+}
+
+.input:hover,
+.input:focus,
+.text-area:hover,
+.text-area:focus {
+  outline: none;
+  border-color: #05060f;
+}
+
+.cta {
+  position: relative;
+  padding: 12px 18px;
+  transition: all 0.3s;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: rgba(255, 99, 71, 0.2);
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s;
+}
+
+.cta span {
+  position: relative;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--color-dark);
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: rgba(255, 99, 71, 0.2);
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+.contact-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact-right img {
+  width: 80%;
+  display: block;
 }
 
 /* Footer */
@@ -502,6 +621,20 @@ footer p:hover span {
     align-items: center;
     text-align: justify;
   }
+
+  .contact {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .contact-right {
+    justify-content: center;
+  }
+
+  .input,
+  .text-area {
+    width: 40rem;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -516,5 +649,10 @@ footer p:hover span {
   .project-btns {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .input,
+  .text-area {
+    width: 30rem;
   }
 }
