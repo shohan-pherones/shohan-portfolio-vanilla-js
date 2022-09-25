@@ -9,6 +9,7 @@ const nav = document.querySelector(".navbar");
 const linksContainer = document.querySelector(".links");
 const links = document.querySelectorAll(".link");
 const toggleBtn = document.querySelector(".toggle");
+const app = document.getElementById("app");
 
 /////////////////////////////////////////////////////////////
 // Navbar sticky
@@ -121,3 +122,23 @@ const tagCloud = TagCloud(".content", myTags, {
   direction: 135,
   keep: true,
 });
+
+/////////////////////////////////////////////////////////////
+// Typewriter effect
+/////////////////////////////////////////////////////////////
+
+const typeWriter = new Typewriter(app, {
+  loop: true,
+});
+
+typeWriter
+  .pauseFor(2000)
+  .typeString("I am a web developer.")
+  .pauseFor(3000)
+  .deleteChars(19)
+  .typeString("build amazing things for the web.")
+  .pauseFor(3000)
+  .deleteChars(33)
+  .typeString("can also design creative & unique websites.")
+  .pauseFor(3000)
+  .start();
