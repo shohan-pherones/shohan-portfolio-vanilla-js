@@ -132,7 +132,7 @@ const typeWriter = new Typewriter(app, {
 });
 
 typeWriter
-  .pauseFor(2000)
+  .pauseFor(5000)
   .typeString("I am a web developer.")
   .pauseFor(3000)
   .deleteChars(19)
