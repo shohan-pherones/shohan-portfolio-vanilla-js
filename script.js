@@ -64,7 +64,6 @@ function disapearMobileNav() {
 }
 
 toggleBtn.addEventListener("click", () => {
-  console.log("hello 3");
   toggleBtn.classList.contains("toggle-close")
     ? disapearMobileNav()
     : apearMobileNav();
@@ -127,7 +126,7 @@ const typeWriter = new Typewriter(app, {
 });
 
 typeWriter
-  .pauseFor(5000)
+  .pauseFor(2000)
   .typeString("I am a web developer.")
   .pauseFor(3000)
   .deleteChars(19)
@@ -150,7 +149,7 @@ function revealSection(entries, observer) {
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.2,
+  threshold: 0.3,
 });
 
 allSections.forEach((section) => {
