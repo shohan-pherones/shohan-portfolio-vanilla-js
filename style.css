@@ -232,7 +232,7 @@ body {
 
 @keyframes heroTextReveal {
   from {
-    transform: translateX(-100rem);
+    transform: translateX(-50rem);
     opacity: 0;
   }
 
@@ -267,7 +267,7 @@ body {
 
 @keyframes heroImgReveal {
   from {
-    transform: translateX(100rem);
+    transform: translateX(50rem);
     opacity: 0;
   }
 
