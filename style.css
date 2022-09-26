@@ -217,6 +217,7 @@ body {
 
 /* Hero */
 .hero {
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 10rem;
