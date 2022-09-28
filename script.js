@@ -10,6 +10,7 @@ const links = document.querySelectorAll(".link");
 const toggleBtn = document.querySelector(".toggle");
 const app = document.getElementById("app");
 const allSections = document.querySelectorAll(".section");
+const projectsContainer = document.querySelector(".projects");
 
 /////////////////////////////////////////////////////////////
 // Navbar sticky
@@ -156,3 +157,79 @@ allSections.forEach((section) => {
   sectionObserver.observe(section);
   section.classList.add("section-hidden");
 });
+
+/////////////////////////////////////////////////////////////
+// Projects
+/////////////////////////////////////////////////////////////
+const allProjects = [
+  {
+    title: "Spectra Bank - An online bank application",
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
+    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
+    autem, nemo quaerat.`,
+    image: "./images/spectra-bank.png",
+    tools: "html, css, js",
+    liveLink: "https://spectra-bank.netlify.app",
+    githubLink: "https://github.com/shohan-pherones/spectra-bank",
+  },
+  {
+    title: "Tera Guard - An anti-virus website",
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
+    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
+    autem, nemo quaerat.`,
+    image: "./images/tera-guard.png",
+    tools: "html, css, js",
+    liveLink: "https://tera-guard.netlify.app",
+    githubLink: "https://github.com/shohan-pherones/tera-guard",
+  },
+  {
+    title: "Map - Pro: A workout mapping application",
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
+    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
+    autem, nemo quaerat.`,
+    image: "./images/map-pro.png",
+    tools: "html, css, js, leaflet.js",
+    liveLink: "https://map-pro-shohan.netlify.app",
+    githubLink: "https://github.com/shohan-pherones/map-pro",
+  },
+];
+
+function displayProjects(projects) {
+  projects.forEach((project) => {
+    const html = `
+        <div class="project">
+          <div class="project-img">
+            <img
+              src="${project.image}"
+              alt="${project.title}"
+            />
+          </div>
+          <h3 class="project-title">
+          ${project.title}
+          </h3>
+          <p class="project-details">
+            ${project.description}
+          </p>
+          <p class="project-tools">
+            <span>${project.tools}</span>
+          </p>
+          <div class="project-btns">
+            <a href="${project.liveLink}" target="_blank"
+              >Live Site &rarr;</a
+            >
+            <a
+              href="${project.githubLink}"
+              target="_blank"
+              >GitHub &rarr;</a
+            >
+          </div>
+        </div>
+    `;
+
+    projectsContainer.insertAdjacentHTML("afterbegin", html);
+  });
+}
+displayProjects(allProjects);
