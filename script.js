@@ -167,6 +167,12 @@ const allProjects = [
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.
     Dignissimos tempora facere et eos commodi veniam perspiciatis iure
     maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
+    autem, nemo quaerat.
+    <br/>
+    <br/>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
+    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
     autem, nemo quaerat.`,
     image: "./images/spectra-bank.png",
     tools: "html, css, js",
@@ -178,6 +184,12 @@ const allProjects = [
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.
     Dignissimos tempora facere et eos commodi veniam perspiciatis iure
     maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
+    autem, nemo quaerat.
+    <br/>
+    <br/>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
+    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
     autem, nemo quaerat.`,
     image: "./images/tera-guard.png",
     tools: "html, css, js",
@@ -187,6 +199,12 @@ const allProjects = [
   {
     title: "Map - Pro: A workout mapping application",
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
+    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
+    autem, nemo quaerat.
+    <br/>
+    <br/>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
     Dignissimos tempora facere et eos commodi veniam perspiciatis iure
     maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
     autem, nemo quaerat.`,
@@ -214,7 +232,7 @@ function displayProjects(projects) {
             ${project.description}
           </p>
           <p class="project-tools">
-            <span>${project.tools}</span>
+            Tools: <span>${project.tools}</span>
           </p>
           <div class="project-btns">
             <a href="${project.liveLink}" target="_blank"
