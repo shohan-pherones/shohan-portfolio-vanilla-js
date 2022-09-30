@@ -213,6 +213,23 @@ const allProjects = [
     liveLink: "https://map-pro-shohan.netlify.app",
     githubLink: "https://github.com/shohan-pherones/map-pro",
   },
+  {
+    title: "REST Countries - What is my country?",
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
+    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
+    autem, nemo quaerat.
+    <br/>
+    <br/>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
+    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
+    autem, nemo quaerat.`,
+    image: "./images/what-is-my-country.png",
+    tools: "html, tailwindcss, js, rest-api",
+    liveLink: "https://rest-countries-shohan.netlify.app",
+    githubLink: "https://github.com/shohan-pherones/rest-countries",
+  },
 ];
 
 function displayProjects(projects) {
