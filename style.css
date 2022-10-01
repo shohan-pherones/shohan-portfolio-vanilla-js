@@ -204,7 +204,7 @@ body {
 }
 
 .section-hidden {
-  transform: translateY(10rem);
+  transform: translateY(20rem);
   opacity: 0;
 }
 
