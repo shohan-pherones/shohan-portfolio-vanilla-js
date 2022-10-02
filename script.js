@@ -230,6 +230,40 @@ const allProjects = [
     liveLink: "https://rest-countries-shohan.netlify.app",
     githubLink: "https://github.com/shohan-pherones/rest-countries",
   },
+  {
+    title: "News Verse - A news website using News Data API",
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
+    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
+    autem, nemo quaerat.
+    <br/>
+    <br/>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
+    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
+    autem, nemo quaerat.`,
+    image: "./images/news-verse.png",
+    tools: "html, tailwindcss, js, news-data-api",
+    liveLink: "https://news-verse.netlify.app",
+    githubLink: "https://github.com/shohan-pherones/news-verse",
+  },
+  {
+    title: "Foody Moody - A meal finder website",
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
+    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
+    autem, nemo quaerat.
+    <br/>
+    <br/>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
+    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
+    autem, nemo quaerat.`,
+    image: "./images/foody-moody.png",
+    tools: "html, tailwindcss, js, forkify-api",
+    liveLink: "https://foody-moody-shohan.netlify.app",
+    githubLink: "https://github.com/shohan-pherones/foody-moody",
+  },
 ];
 
 function displayProjects(projects) {
