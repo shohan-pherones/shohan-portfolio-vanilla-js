@@ -1,6 +1,6 @@
-import spectraBank from "../assets/images/spectra-bank.png";
-import teraGuard from "../assets/images/tera-guard.png";
-import mapPro from "../assets/images/map-pro.png";
+import Typewriter from "typewriter-effect/dist/core";
+import TagCloud from "TagCloud";
+import * as projects from "../../projects.json";
 
 /////////////////////////////////////////////////////////////
 // Elements
@@ -163,60 +163,6 @@ allSections.forEach((section) => {
 /////////////////////////////////////////////////////////////
 // Projects
 /////////////////////////////////////////////////////////////
-const allProjects = [
-  {
-    title: "Spectra Bank - An online bank application",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
-    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
-    autem, nemo quaerat.
-    <br/>
-    <br/>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
-    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
-    autem, nemo quaerat.`,
-    image: spectraBank,
-    tools: "html, css, js",
-    liveLink: "https://spectra-bank.netlify.app",
-    githubLink: "https://github.com/shohan-pherones/spectra-bank",
-  },
-  {
-    title: "Tera Guard - An anti-virus website",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
-    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
-    autem, nemo quaerat.
-    <br/>
-    <br/>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
-    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
-    autem, nemo quaerat.`,
-    image: teraGuard,
-    tools: "html, css, js",
-    liveLink: "https://tera-guard.netlify.app",
-    githubLink: "https://github.com/shohan-pherones/tera-guard",
-  },
-  {
-    title: "Map - Pro: A workout mapping application",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
-    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
-    autem, nemo quaerat.
-    <br/>
-    <br/>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    Dignissimos tempora facere et eos commodi veniam perspiciatis iure
-    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore
-    autem, nemo quaerat.`,
-    image: mapPro,
-    tools: "html, css, js, leaflet.js",
-    liveLink: "https://map-pro-shohan.netlify.app",
-    githubLink: "https://github.com/shohan-pherones/map-pro",
-  },
-];
-
 function displayProjects(projects) {
   projects.forEach((project) => {
     const html = `
@@ -224,7 +170,7 @@ function displayProjects(projects) {
           <div class="project-img">
             <img
               src="${project.image}"
-              alt="${project.title}"
+              alt="Photo of ${project.title}"
             />
           </div>
           <h3 class="project-title">
@@ -252,4 +198,5 @@ function displayProjects(projects) {
     projectsContainer.insertAdjacentHTML("afterbegin", html);
   });
 }
-displayProjects(allProjects);
+
+displayProjects(projects);

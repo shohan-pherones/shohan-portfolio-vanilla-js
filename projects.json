@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Spectra Bank - An online bank application",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.\n    Dignissimos tempora facere et eos commodi veniam perspiciatis iure\n    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore\n    autem, nemo quaerat.\n    <br/>\n    <br/>\n    Lorem ipsum dolor sit, amet consectetur adipisicing elit.\n    Dignissimos tempora facere et eos commodi veniam perspiciatis iure\n    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore\n    autem, nemo quaerat.",
+    "image": "",
+    "tools": "html, css, js",
+    "liveLink": "https://spectra-bank.netlify.app",
+    "githubLink": "https://github.com/shohan-pherones/spectra-bank"
+  },
+  {
+    "title": "Tera Guard - An anti-virus website",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.\n    Dignissimos tempora facere et eos commodi veniam perspiciatis iure\n    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore\n    autem, nemo quaerat.\n    <br/>\n    <br/>\n    Lorem ipsum dolor sit, amet consectetur adipisicing elit.\n    Dignissimos tempora facere et eos commodi veniam perspiciatis iure\n    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore\n    autem, nemo quaerat.",
+    "image": "",
+    "tools": "html, css, js",
+    "liveLink": "https://tera-guard.netlify.app",
+    "githubLink": "https://github.com/shohan-pherones/tera-guard"
+  },
+  {
+    "title": "Map - Pro: A workout mapping application",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.\n    Dignissimos tempora facere et eos commodi veniam perspiciatis iure\n    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore\n    autem, nemo quaerat.\n    <br/>\n    <br/>\n    Lorem ipsum dolor sit, amet consectetur adipisicing elit.\n    Dignissimos tempora facere et eos commodi veniam perspiciatis iure\n    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore\n    autem, nemo quaerat.",
+    "image": "",
+    "tools": "html, css, js, leaflet.js",
+    "liveLink": "https://map-pro-shohan.netlify.app",
+    "githubLink": "https://github.com/shohan-pherones/map-pro"
+  }
+]
