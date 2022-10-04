@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Portfolio website",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "process": "^0.11.10"
   },
   "dependencies": {
+    "core-js": "^3.25.5",
     "TagCloud": "^2.2.0",
     "typewriter-effect": "^2.19.0"
   }

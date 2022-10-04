@@ -1,6 +1,6 @@
 :root {
-  --color-primary: #40e0d0;
-  --color-secondary: #ff6347;
+  --color-primary: #ff6347;
+  --color-secondary: #40e0d0;
   --color-light: #f7f7f7;
   --color-dark: #444;
 }
@@ -15,15 +15,17 @@
 
 ::-webkit-scrollbar-thumb {
   height: 10%;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
 
 ::selection {
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
   color: var(--color-dark);
 }
 
-* {
+*,
+*::before,
+*::before {
   margin: 0;
   padding: 0;
   border: none;
@@ -52,6 +54,16 @@ body {
 .container {
   max-width: 80vw;
   margin: 0 auto;
+}
+
+/* Particles */
+#c {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
 }
 
 /* Navbar */
@@ -250,7 +262,7 @@ body {
   font-size: 5rem;
   line-height: 1.5;
   font-weight: 600;
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .main-headline span {
@@ -322,7 +334,7 @@ body {
 }
 
 .tagcloud--item:hover {
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 /* Projects */
@@ -365,7 +377,7 @@ body {
 }
 
 .project-tools span {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-weight: 400;
 }
 
@@ -377,7 +389,7 @@ body {
 
 .project-btns a {
   font-size: 2rem;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-weight: 500;
   transition: all 0.3s;
 }
@@ -511,14 +523,18 @@ body {
 
 /* Footer */
 footer {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   padding: 15rem 0;
   margin-top: 15rem;
   text-align: center;
 }
 
-footer span {
+footer a {
   color: var(--color-light);
+}
+
+footer a:hover {
+  border-bottom: 1px solid var(--color-light);
 }
 
 /* Media queries */

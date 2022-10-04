@@ -1,6 +1,6 @@
 :root {
-  --color-primary: #40e0d0;
-  --color-secondary: tomato;
+  --color-primary: tomato;
+  --color-secondary: #40e0d0;
   --color-light: #f7f7f7;
   --color-dark: #444;
 }
@@ -15,15 +15,15 @@
 
 ::-webkit-scrollbar-thumb {
   height: 10%;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
 
 ::selection {
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
   color: var(--color-dark);
 }
 
-* {
+*, :before, :before {
   box-sizing: border-box;
   border: none;
   outline: none;
@@ -52,6 +52,15 @@ body {
 .container {
   max-width: 80vw;
   margin: 0 auto;
+}
+
+#c {
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .navbar {
@@ -244,7 +253,7 @@ body {
 }
 
 .main-headline {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-size: 5rem;
   font-weight: 600;
   line-height: 1.5;
@@ -317,7 +326,7 @@ body {
 }
 
 .tagcloud--item:hover {
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .projects {
@@ -358,7 +367,7 @@ body {
 }
 
 .project-tools span {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-weight: 400;
 }
 
@@ -369,7 +378,7 @@ body {
 }
 
 .project-btns a {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-size: 2rem;
   font-weight: 500;
   transition: all .3s;
@@ -499,14 +508,18 @@ body {
 }
 
 footer {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   text-align: center;
   margin-top: 15rem;
   padding: 15rem 0;
 }
 
-footer span {
+footer a {
   color: var(--color-light);
+}
+
+footer a:hover {
+  border-bottom: 1px solid var(--color-light);
 }
 
 @media screen and (max-width: 1440px) {
