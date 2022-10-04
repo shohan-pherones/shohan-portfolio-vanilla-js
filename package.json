@@ -1,0 +1,22 @@
+{
+  "name": "shohan-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shohan-pherones/shohan-portfolio-vanilla-js.git"
+  },
+  "author": "Md. Shohanur Rahman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shohan-pherones/shohan-portfolio-vanilla-js/issues"
+  },
+  "homepage": "https://github.com/shohan-pherones/shohan-portfolio-vanilla-js#readme",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
