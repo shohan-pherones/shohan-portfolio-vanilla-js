@@ -79,30 +79,14 @@ const myTags = [
   "Git",
   "GitHub",
   "Netlify",
-  "JavaScript",
-  "React.js",
-  "Next.js",
-  "React Native",
-  "Redux",
-  "Material UI",
-  "React Bootstrap",
-  "Sanity.io",
-  "Node.js",
-  "NPM",
-  "Express.js",
-  "MySQL",
-  "MongoDB",
-  "Mongoose",
-  "Python",
-  "C",
-  "C++",
-  "C#",
-  "jQuery",
-  "Vue.js",
-  "Sass",
+  "JavaScript (ES6+)",
   "AJAX",
-  "Axios",
   "Fetch API",
+  "NPM",
+  "Parcel",
+  "Flowbite",
+  "Daisy UI",
+  "Vercel",
 ];
 
 const tagCloud = TagCloud(".content", myTags, {
@@ -119,7 +103,7 @@ const typeWriter = new Typewriter(app, {
 });
 
 typeWriter
-  .pauseFor(2000)
+  .pauseFor(1500)
   .typeString("I am a web developer.")
   .pauseFor(3000)
   .deleteChars(19)

@@ -297,7 +297,7 @@ body {
 
 .project-img img {
   width: 100%;
-  filter: brightness(.75);
+  filter: brightness(.95);
   border-radius: 10px;
 }
 

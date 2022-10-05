@@ -599,30 +599,14 @@ const myTags = [
     "Git",
     "GitHub",
     "Netlify",
-    "JavaScript",
-    "React.js",
-    "Next.js",
-    "React Native",
-    "Redux",
-    "Material UI",
-    "React Bootstrap",
-    "Sanity.io",
-    "Node.js",
-    "NPM",
-    "Express.js",
-    "MySQL",
-    "MongoDB",
-    "Mongoose",
-    "Python",
-    "C",
-    "C++",
-    "C#",
-    "jQuery",
-    "Vue.js",
-    "Sass",
+    "JavaScript (ES6+)",
     "AJAX",
-    "Axios",
-    "Fetch API", 
+    "Fetch API",
+    "NPM",
+    "Parcel",
+    "Flowbite",
+    "Daisy UI",
+    "Vercel", 
 ];
 const tagCloud = (0, _tagCloudDefault.default)(".content", myTags, {
     radius: 375,
@@ -635,7 +619,7 @@ const tagCloud = (0, _tagCloudDefault.default)(".content", myTags, {
 const typeWriter = new (0, _coreDefault.default)(app, {
     loop: true
 });
-typeWriter.pauseFor(2000).typeString("I am a web developer.").pauseFor(3000).deleteChars(19).typeString("build amazing things for the web.").pauseFor(3000).deleteChars(33).typeString("can also design creative & unique websites.").pauseFor(3000).start();
+typeWriter.pauseFor(1500).typeString("I am a web developer.").pauseFor(3000).deleteChars(19).typeString("build amazing things for the web.").pauseFor(3000).deleteChars(33).typeString("can also design creative & unique websites.").pauseFor(3000).start();
 // Projects
 function displayProjects(projects) {
     projects.forEach((project)=>{
@@ -1638,7 +1622,7 @@ process.umask = function() {
 });
 
 },{}],"85X92":[function(require,module,exports) {
-module.exports = JSON.parse('[{"title":"Spectra Bank - An online bank application","description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit.\\n    Dignissimos tempora facere et eos commodi veniam perspiciatis iure\\n    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore\\n    autem, nemo quaerat.\\n    <br/>\\n    <br/>\\n    Lorem ipsum dolor sit, amet consectetur adipisicing elit.\\n    Dignissimos tempora facere et eos commodi veniam perspiciatis iure\\n    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore\\n    autem, nemo quaerat.","image":"","tools":"html, css, js","liveLink":"https://spectra-bank.netlify.app","githubLink":"https://github.com/shohan-pherones/spectra-bank"},{"title":"Tera Guard - An anti-virus website","description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit.\\n    Dignissimos tempora facere et eos commodi veniam perspiciatis iure\\n    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore\\n    autem, nemo quaerat.\\n    <br/>\\n    <br/>\\n    Lorem ipsum dolor sit, amet consectetur adipisicing elit.\\n    Dignissimos tempora facere et eos commodi veniam perspiciatis iure\\n    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore\\n    autem, nemo quaerat.","image":"","tools":"html, css, js","liveLink":"https://tera-guard.netlify.app","githubLink":"https://github.com/shohan-pherones/tera-guard"},{"title":"Map - Pro: A workout mapping application","description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit.\\n    Dignissimos tempora facere et eos commodi veniam perspiciatis iure\\n    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore\\n    autem, nemo quaerat.\\n    <br/>\\n    <br/>\\n    Lorem ipsum dolor sit, amet consectetur adipisicing elit.\\n    Dignissimos tempora facere et eos commodi veniam perspiciatis iure\\n    maxime natus facilis sunt, quas suscipit odio odit, fugit tempore\\n    autem, nemo quaerat.","image":"","tools":"html, css, js, leaflet.js","liveLink":"https://map-pro-shohan.netlify.app","githubLink":"https://github.com/shohan-pherones/map-pro"}]');
+module.exports = JSON.parse('[{"title":"Spectra Bank - An online bank application","description":"Spectra Bank is an online bank that helps you save with the power of technology! With our application, you can easily deposit checks, transfer money, and send and receive payments. All without any hassle. What\'s more: we\'ve made sure the experience of using Spectra Bank is as seamless as possible. With a modern UI and UX, it\'s not hard to see why many people are switching their banking to Spectra Bank!","image":"https://pbs.twimg.com/media/FeSw4W6VIAEDuOg?format=jpg&name=large","tools":"html, css, js, parcel","liveLink":"https://spectra-bank.netlify.app","githubLink":"https://github.com/shohan-pherones/spectra-bank"},{"title":"Tera Guard - An anti-virus website","description":"A mix of pure simplicity and functional elegance, Tera Guard is a web-based security solution that provides protection against internet threats, malware and cyber-attacks. With our robust system, you can be confident that your data and network are safe from hackers and malicious intent. Enjoy the peace of mind knowing your business is protected with our 24/7 customer support team.","image":"https://pbs.twimg.com/media/FeSw8ekVEAEK797?format=jpg&name=large","tools":"html, css, js, parcel","liveLink":"https://tera-guard.netlify.app","githubLink":"https://github.com/shohan-pherones/tera-guard"},{"title":"Map - Pro: A workout mapping application","description":"Fitness and health have never been more accessible. Map - Pro offers an interactive workout mapping app for athletes and fitness enthusiasts who love tracking their workouts and seeing the change in their fitness. Map - Pro is an easy-to-use fitness app that provides safe and effective workouts in the form of mapped routes from different levels of intensity, suitable for all levels of fitness. Take a post-workout walk or jog with your colleagues, go on a bike ride with the family on weekends or even try taking the stairs to work!","image":"https://pbs.twimg.com/media/FeSw_tdVsAA4JxI?format=jpg&name=large","tools":"html, css, js, leaflet.js, parcel","liveLink":"https://map-pro-shohan.netlify.app","githubLink":"https://github.com/shohan-pherones/map-pro"}]');
 
 },{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {

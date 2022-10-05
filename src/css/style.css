@@ -307,7 +307,7 @@ body {
 .project-img img {
   width: 100%;
   border-radius: 10px;
-  filter: brightness(0.75);
+  filter: brightness(0.95);
 }
 
 .project-title {
