@@ -39,8 +39,8 @@ links.forEach((link) =>
 
     siblings.forEach((sibling) => {
       sibling === link
-        ? (sibling.style.color = "turquoise")
-        : (sibling.style.color = "#444");
+        ? (sibling.style.color = "rgb(20, 184, 166)")
+        : (sibling.style.color = "rgb(209, 213, 219)");
     });
   })
 );
@@ -169,4 +169,5 @@ function displayProjects(projects) {
 
 displayProjects(projects);
 
+// Animate on scroll
 AOS.init();

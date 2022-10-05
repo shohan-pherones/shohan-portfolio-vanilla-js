@@ -568,7 +568,7 @@ links.forEach((link)=>link.addEventListener("click", (e)=>{
         const link = e.target;
         const siblings = link.closest(".links").querySelectorAll(".link");
         siblings.forEach((sibling)=>{
-            sibling === link ? sibling.style.color = "turquoise" : sibling.style.color = "#444";
+            sibling === link ? sibling.style.color = "rgb(20, 184, 166)" : sibling.style.color = "rgb(209, 213, 219)";
         });
     }));
 // Link toggle
@@ -672,6 +672,7 @@ function displayProjects(projects) {
     });
 }
 displayProjects(_projectsJson);
+// Animate on scroll
 (0, _aosDefault.default).init();
 
 },{"typewriter-effect/dist/core":"gppl0","TagCloud":"b2L52","../../projects.json":"85X92","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","core-js/modules/web.immediate.js":"49tUX","aos":"eRzTM","aos/dist/aos.css":"iYkXi"}],"gppl0":[function(require,module,exports) {
