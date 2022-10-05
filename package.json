@@ -1,6 +1,6 @@
 {
   "name": "shohan-portfolio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Portfolio website",
   "scripts": {
     "start": "parcel ./src/index.html",
@@ -21,7 +21,6 @@
     "process": "^0.11.10"
   },
   "dependencies": {
-    "aos": "^3.0.0-beta.6",
     "core-js": "^3.25.5",
     "TagCloud": "^2.2.0",
     "typewriter-effect": "^2.19.0"

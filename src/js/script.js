@@ -1,7 +1,5 @@
 import Typewriter from "typewriter-effect/dist/core";
 import TagCloud from "TagCloud";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import "core-js/stable";
 import * as projects from "../../projects.json";
 
@@ -152,6 +150,3 @@ function displayProjects(projects) {
 }
 
 displayProjects(projects);
-
-// Animate on scroll
-AOS.init();
