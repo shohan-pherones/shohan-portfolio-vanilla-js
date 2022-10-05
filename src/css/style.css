@@ -56,16 +56,6 @@ body {
   margin: 0 auto;
 }
 
-/* Particles */
-#c {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -100;
-}
-
 /* Navbar */
 .navbar {
   display: flex;
@@ -74,19 +64,6 @@ body {
   width: 100%;
   height: 10rem;
   padding: 0 10vw;
-  animation: navReveal 2s 1;
-}
-
-@keyframes navReveal {
-  from {
-    transform: translateY(-10rem);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 .sticky .navbar {
@@ -239,19 +216,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
-  animation: heroTextReveal 2s 1;
-}
-
-@keyframes heroTextReveal {
-  from {
-    transform: translateX(-50rem);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 .hello {
@@ -274,19 +238,6 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  animation: heroImgReveal 2s 1;
-}
-
-@keyframes heroImgReveal {
-  from {
-    transform: translateX(50rem);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 .hero-right img {
