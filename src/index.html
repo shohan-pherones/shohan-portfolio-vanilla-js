@@ -49,7 +49,7 @@
         <div class="hero-left">
           <p class="hello">Hello there, my name is</p>
           <h1 class="main-headline">
-            Md. Shohanur Rahman. <br />
+            <span class="full-name"></span> <br />
             <span id="app"></span>
           </h1>
           <p>
@@ -134,16 +134,29 @@
         <div class="contact container">
           <div class="contact-left">
             <div class="input-group">
-              <label class="label">First name</label>
-              <input class="input" type="text" placeholder="Sarah" required />
-            </div>
-            <div class="input-group">
-              <label class="label">Last name</label>
-              <input class="input" type="text" placeholder="Parker" required />
-            </div>
-            <div class="input-group">
-              <label class="label">Email address</label>
+              <label class="label" for="first-name">First name</label>
               <input
+                class="input"
+                type="text"
+                id="first-name"
+                placeholder="Sarah"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label class="label" for="last-name">Last name</label>
+              <input
+                class="input"
+                type="text"
+                id="last-name"
+                placeholder="Parker"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label class="label" for="email">Email address</label>
+              <input
+                id="email"
                 class="input"
                 type="email"
                 placeholder="hello@example.com"
@@ -151,8 +164,9 @@
               />
             </div>
             <div class="input-group">
-              <label class="label">Message</label>
+              <label class="label" for="message">Message</label>
               <textarea
+                id="message"
                 cols="30"
                 rows="5"
                 class="text-area"

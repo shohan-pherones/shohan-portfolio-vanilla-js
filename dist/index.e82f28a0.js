@@ -653,6 +653,23 @@ function displayProjects(projects) {
     });
 }
 displayProjects(_projectsJson);
+// Name bouncing effect
+function nameBoune() {
+    const nameContainer = document.querySelector(".full-name");
+    const fullName = "Shohanur Rahman.";
+    for (const letter of fullName){
+        const html = `<span class="ch">${letter}</span>`;
+        nameContainer.insertAdjacentHTML("beforeend", html);
+    }
+    const allCh = document.querySelectorAll(".ch");
+    allCh.forEach((ch)=>{
+        ch.addEventListener("mouseover", function(e) {
+            if (!e.target.classList.contains("bounce")) e.target.classList.add("bounce");
+            else e.target.classList.remove("bounce");
+        });
+    });
+}
+nameBoune();
 
 },{"typewriter-effect/dist/core":"gppl0","TagCloud":"b2L52","../../projects.json":"85X92","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","core-js/modules/web.immediate.js":"49tUX"}],"gppl0":[function(require,module,exports) {
 var process = require("process");

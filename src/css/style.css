@@ -224,7 +224,7 @@ body {
   color: var(--color-primary);
 }
 
-.main-headline span {
+.main-headline #app {
   font-weight: 400;
   color: rgb(55, 65, 81);
 }
@@ -303,12 +303,28 @@ body {
   overflow: hidden;
   box-shadow: 9px 12.5px 62.6px rgba(0, 0, 0, 0.05),
     72px 100px 500px rgba(0, 0, 0, 0.075);
+  transition: all 0.5s;
+}
+
+.project:hover {
+  transform: scale(1.025);
+}
+
+.project-img {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .project-img img {
   width: 100%;
   border-radius: 10px;
-  filter: brightness(0.95);
+  filter: brightness(0.85);
+  transition: all 0.5s;
+}
+
+.project-img img:hover {
+  filter: brightness(1);
+  transform: scale(1.1);
 }
 
 .project-title {
@@ -319,6 +335,11 @@ body {
   height: 15rem;
   overflow-y: scroll;
   color: rgb(107, 114, 128);
+  transition: all 0.5s;
+}
+
+.project-details:hover {
+  color: var(--color-white);
 }
 
 .project-tools {
@@ -395,6 +416,7 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--color-white);
+  cursor: pointer;
   transition: all 0.3s;
 }
 
@@ -488,6 +510,38 @@ footer a {
 
 footer a:hover {
   border-bottom: 1px solid var(--color-black);
+}
+
+/* Name bouncing effect */
+.ch {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.ch:nth-child(9) {
+  margin-right: 2rem;
+}
+
+.bounce {
+  animation: bounce 1s 1;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 /* Media queries */

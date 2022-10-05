@@ -219,7 +219,7 @@ body {
   line-height: 1.5;
 }
 
-.main-headline span {
+.main-headline #app {
   color: #374151;
   font-weight: 400;
 }
@@ -291,15 +291,31 @@ body {
   flex-direction: column;
   gap: 2rem;
   padding: 2.5rem;
+  transition: all .5s;
   display: flex;
   overflow: hidden;
   box-shadow: 9px 12.5px 62.6px #0000000d, 72px 100px 500px #00000013;
 }
 
+.project:hover {
+  transform: scale(1.025);
+}
+
+.project-img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .project-img img {
   width: 100%;
-  filter: brightness(.95);
+  filter: brightness(.85);
   border-radius: 10px;
+  transition: all .5s;
+}
+
+.project-img img:hover {
+  filter: brightness();
+  transform: scale(1.1);
 }
 
 .project-title {
@@ -309,7 +325,12 @@ body {
 .project-details {
   height: 15rem;
   color: #6b7280;
+  transition: all .5s;
   overflow-y: scroll;
+}
+
+.project-details:hover {
+  color: var(--color-white);
 }
 
 .project-tools {
@@ -381,6 +402,7 @@ body {
 
 .label {
   color: var(--color-white);
+  cursor: pointer;
   margin-bottom: .3rem;
   font-size: 1.5rem;
   font-weight: 500;
@@ -474,6 +496,33 @@ footer a {
 
 footer a:hover {
   border-bottom: 1px solid var(--color-black);
+}
+
+.ch {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.ch:nth-child(9) {
+  margin-right: 2rem;
+}
+
+.bounce {
+  animation: 1s bounce;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 @media screen and (max-width: 1440px) {

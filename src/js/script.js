@@ -150,3 +150,26 @@ function displayProjects(projects) {
 }
 
 displayProjects(projects);
+
+// Name bouncing effect
+function nameBoune() {
+  const nameContainer = document.querySelector(".full-name");
+  const fullName = "Shohanur Rahman.";
+
+  for (const letter of fullName) {
+    const html = `<span class="ch">${letter}</span>`;
+    nameContainer.insertAdjacentHTML("beforeend", html);
+  }
+
+  const allCh = document.querySelectorAll(".ch");
+
+  allCh.forEach((ch) => {
+    ch.addEventListener("mouseover", function (e) {
+      if (!e.target.classList.contains("bounce"))
+        e.target.classList.add("bounce");
+      else e.target.classList.remove("bounce");
+    });
+  });
+}
+
+nameBoune();
