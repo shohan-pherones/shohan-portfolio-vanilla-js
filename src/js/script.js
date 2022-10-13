@@ -152,7 +152,7 @@ function displayProjects(projects) {
 displayProjects(projects);
 
 // Name bouncing effect
-function nameBoune() {
+function nameBounce() {
   const nameContainer = document.querySelector(".full-name");
   const fullName = "Shohanur Rahman.";
 
@@ -172,4 +172,4 @@ function nameBoune() {
   });
 }
 
-nameBoune();
+nameBounce();

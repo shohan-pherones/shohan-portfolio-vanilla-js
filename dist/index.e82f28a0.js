@@ -654,7 +654,7 @@ function displayProjects(projects) {
 }
 displayProjects(_projectsJson);
 // Name bouncing effect
-function nameBoune() {
+function nameBounce() {
     const nameContainer = document.querySelector(".full-name");
     const fullName = "Shohanur Rahman.";
     for (const letter of fullName){
@@ -669,7 +669,7 @@ function nameBoune() {
         });
     });
 }
-nameBoune();
+nameBounce();
 
 },{"typewriter-effect/dist/core":"gppl0","TagCloud":"b2L52","../../projects.json":"85X92","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","core-js/modules/web.immediate.js":"49tUX"}],"gppl0":[function(require,module,exports) {
 var process = require("process");
